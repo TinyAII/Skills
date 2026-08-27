@@ -1,0 +1,54 @@
+# Skills 技能系统 - 技能线配置
+# 能力解锁节奏（全局统一，老板定稿）：
+#   ability-1: 1级起每5级 | ability-2: 9级起每8级 | ability-3: 18级起每10级
+#   ability-4: 31级起每15级 | ability-5: 50级起每20级（满级80只升1次）
+# 每能力字段：name 显示名 / desc 效果描述（详情页展示给玩家）/ unlock 解锁等级 / every 升档间隔 / base 基础值 / per 每档增量 / max-level 能力最高档(0=不限)
+skills:
+  mining:
+    ability-1: { name: "幸运矿工", desc: "挖矿时概率双倍掉落（矿石/石料翻倍）", unlock: 1, every: 5, base: 5, per: 5, max-level: 0 }
+    ability-2: { name: "矿工经验", desc: "挖矿获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "镐精通", desc: "挖掘速度提升（挖得更快）", unlock: 18, every: 10, base: 3, per: 2, max-level: 0 }
+    ability-4: { name: "矿洞耐力", desc: "工具耐久消耗降低（偶尔免扣耐久）", unlock: 31, every: 15, base: 1, per: 1, max-level: 0 }
+    ability-5: { name: "硬化护甲", desc: "穿戴盔甲受伤减免", unlock: 50, every: 20, base: 3, per: 3, max-level: 0 }
+  fighting:
+    ability-1: { name: "格挡", desc: "被近战攻击时概率减伤", unlock: 1, every: 5, base: 5, per: 2, max-level: 20 }
+    ability-2: { name: "战斗经验", desc: "打怪获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "剑精通", desc: "近战伤害提升（剑/斧等）", unlock: 18, every: 10, base: 3, per: 2, max-level: 0 }
+    ability-4: { name: "先手", desc: "对满血怪物首击伤害加成", unlock: 31, every: 15, base: 15, per: 5, max-level: 0 }
+    ability-5: { name: "流血", desc: "击中时概率让怪物持续流血", unlock: 50, every: 20, base: 3, per: 3, max-level: 0 }
+  foraging:
+    ability-1: { name: "伐木工", desc: "砍树时概率额外掉落一个原木", unlock: 1, every: 5, base: 10, per: 10, max-level: 0 }
+    ability-2: { name: "伐木经验", desc: "砍树获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "斧精通", desc: "斧头挖掘速度提升（砍得更快）", unlock: 18, every: 10, base: 4, per: 3, max-level: 0 }
+    ability-4: { name: "勇猛", desc: "手持斧头时近战伤害小增", unlock: 31, every: 15, base: 1, per: 1, max-level: 0 }
+    ability-5: { name: "撕碎", desc: "砍树时概率额外再掉一个原木", unlock: 50, every: 20, base: 3, per: 3, max-level: 0 }
+  farming:
+    ability-1: { name: "丰收", desc: "收割作物时概率额外掉落一份", unlock: 1, every: 5, base: 10, per: 10, max-level: 0 }
+    ability-2: { name: "农艺经验", desc: "收割获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "镰刀精通", desc: "收割范围增大（一次收更多）", unlock: 18, every: 10, base: 3, per: 2, max-level: 0 }
+    ability-4: { name: "基因学家", desc: "收割后种子返还率提升", unlock: 31, every: 15, base: 1, per: 2, max-level: 0 }
+    ability-5: { name: "生长光环", desc: "附近作物生长速度加快", unlock: 50, every: 20, base: 12, per: 12, max-level: 0 }
+  fishing:
+    ability-1: { name: "幸运捕获", desc: "钓鱼时额外捕获几率提升", unlock: 1, every: 5, base: 5, per: 5, max-level: 0 }
+    ability-2: { name: "渔夫经验", desc: "钓鱼获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "宝藏猎人", desc: "钓到宝箱/宝藏几率提升", unlock: 18, every: 10, base: 0.5, per: 0.5, max-level: 0 }
+    ability-4: { name: "甩杆大师", desc: "抛竿距离提升（抛得更远）", unlock: 31, every: 15, base: 10, per: 5, max-level: 0 }
+    ability-5: { name: "史诗渔获", desc: "钓到宝藏槽几率提升（更多好物）", unlock: 50, every: 20, base: 2, per: 1, max-level: 0 }
+  brewing:
+    ability-1: { name: "炼金师", desc: "酿造时概率返还材料（省材料）", unlock: 1, every: 5, base: 5, per: 4, max-level: 0 }
+    ability-2: { name: "炼药经验", desc: "酿造获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "投掷师", desc: "药水效果增强（持续时间/强度）", unlock: 18, every: 10, base: 0.5, per: 0.25, max-level: 0 }
+    ability-4: { name: "滞留大师", desc: "酿造时概率免费升级为滞留药水", unlock: 31, every: 15, base: 5, per: 4, max-level: 0 }
+    ability-5: { name: "睿智效果", desc: "所有药水效果加成（终极炼药）", unlock: 50, every: 20, base: 1, per: 1, max-level: 0 }
+  archery:
+    ability-1: { name: "回收", desc: "射出的箭有几率自动回收（省箭）", unlock: 1, every: 5, base: 5, per: 5, max-level: 0 }
+    ability-2: { name: "弓术经验", desc: "弓杀获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "弓精通", desc: "弓箭伤害提升", unlock: 18, every: 10, base: 3, per: 2, max-level: 0 }
+    ability-4: { name: "穿透", desc: "箭矢概率穿透怪物继续飞行", unlock: 31, every: 15, base: 3, per: 3, max-level: 0 }
+    ability-5: { name: "眩晕", desc: "命中时概率击晕目标（短时无法行动）", unlock: 50, every: 20, base: 2, per: 1, max-level: 0 }
+  defense:
+    ability-1: { name: "护盾", desc: "受到伤害时概率被动减伤", unlock: 1, every: 5, base: 2, per: 3, max-level: 20 }
+    ability-2: { name: "防御经验", desc: "受击获得经验值加成（升级更快）", unlock: 9, every: 8, base: 10, per: 10, max-level: 0 }
+    ability-3: { name: "怪物大师", desc: "对怪物伤害减免（专防怪）", unlock: 18, every: 10, base: 2, per: 3, max-level: 0 }
+    ability-4: { name: "免疫", desc: "受到负面效果时概率免疫（中毒等）", unlock: 31, every: 15, base: 0.5, per: 0.4, max-level: 0 }
+    ability-5: { name: "无Debuff", desc: "负面效果持续时间缩短（快速恢复）", unlock: 50, every: 20, base: 5, per: 5, max-level: 0 }
