@@ -1,0 +1,20 @@
+name: Skills
+version: 1.0.0
+main: nl.tinyaii.skills.SkillsPlugin
+api-version: 1.16
+author: TinyAII
+description: 技能系统 - 8条原版成长线 + 里程碑能力解锁，零依赖
+website: https://github.com/TinyAII
+
+commands:
+  技能:
+    description: 技能系统主命令
+    usage: /技能 [信息|重载]
+
+permissions:
+  skills.use:
+    description: 打开技能面板
+    default: true
+  skills.admin:
+    description: 管理命令
+    default: op
