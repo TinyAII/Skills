@@ -1,0 +1,24 @@
+# Skills 技能系统 配置
+settings:
+  # 各技能线满级
+  max-level: 80
+  # 能力解锁节奏（全局统一，老板定稿）：
+  #   slot-1: 1级起每5级 | slot-2: 9级起每8级 | slot-3: 18级起每10级 | slot-4: 31级起每15级 | slot-5: 50级起每20级
+  # 防御线：PVP 是否给经验（默认 false=只吃自然怪伤害）
+  defense-pvp-xp: false
+
+# 升级反馈（三档）
+feedback:
+  normal-levelup: true        # 普通升级提示（每级都有）
+  levelup-sound: true         # 普通升级音效
+  milestone-title: true       # 关键里程碑（能力解锁）全屏 Title
+  milestone-sound: true       # 里程碑音效
+  particle: true              # 升级粒子特效
+  max-level-broadcast: true   # 满级全服广播（可关，只给该玩家）
+
+messages:
+  prefix: "&7[&6技能&7] &r"
+  no-permission: "&c你没有权限这么做。"
+  levelup: "&a技能 &e{skill} &a提升到 &e{level} &a级！"
+  ability-unlocked: "&d解锁新能力：&e{ability}&d！"
+  reloaded: "&a配置已重载。"
